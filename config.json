@@ -1,0 +1,43 @@
+{
+  "machine_id": "",
+  "collector_host": "",
+  "collector_port": 48123,
+  "shared_secret": "",
+  "poll_seconds": 3,
+  "state_file": "state.json",
+  "local_log": "alerts.jsonl",
+  "local_log_max_mb": 16,
+  "local_log_backups": 5,
+  "outbox_file": "outbox.jsonl",
+  "report_failed_dns": true,
+  "report_resolver_errors": false,
+  "stats_interval_seconds": 600,
+  "ignore_system_accounts": true,
+  "ignored_processes": [
+    "svchost.exe",
+    "services.exe",
+    "System"
+  ],
+  "ignored_domains": [
+    "wpad",
+    "*.msedge.net",
+    "*.footprintdns.com",
+    "*.azurefd.net",
+    "go.microsoft.com",
+    "www.microsoft.com",
+    "edge.microsoft.com",
+    "ieonline.microsoft.com",
+    "checkappexec.microsoft.com",
+    "oneocsp.microsoft.com",
+    "crl.microsoft.com",
+    "ocsp.digicert.com"
+  ],
+  "allowed_domains": [
+    "*.seuoj.best"
+  ],
+  "tcp_watch": {
+    "enabled": false,
+    "interval_seconds": 30,
+    "known_ip_minutes": 30
+  }
+}

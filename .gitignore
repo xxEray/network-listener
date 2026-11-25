@@ -1,0 +1,26 @@
+# Build artifacts
+build/
+dist/
+work/
+out/
+data/
+*.spec
+__pycache__/
+*.pyc
+
+# Runtime state produced when the listener is run from the repo
+alerts.jsonl*
+state.json
+outbox.jsonl
+logs/
+smoke-*
+_tmp_probe/
+# --self-test / --replay scratch dirs when %TEMP% is not writable
+dnsmon-*/
+
+# ignore trash file
+_unused
+
+# Never commit real per-machine secrets
+secrets.json
+*.csv
